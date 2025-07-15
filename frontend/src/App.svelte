@@ -12,7 +12,7 @@
     }
     triedEmpty = false;
     try {
-      const res = await fetch('https://qr-code-generator-y4lj.onrender.com', {
+      const res = await fetch('https://qr-code-generator-y4lj.onrender.com/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url })
